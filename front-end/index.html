@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">🎓 Student Management</h1>
+
+        <!-- Form เพิ่มนักศึกษา -->
+        <div class="card shadow p-4">
+            <h3 class="mb-3">Add Student</h3>
+            <div class="row g-2">
+                <div class="col-md-3">
+                    <input id="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-2">
+                    <input id="age" type="number" class="form-control" placeholder="Age">
+                </div>
+                <div class="col-md-3">
+                    <input id="phone" class="form-control" placeholder="Phone">
+                </div>
+                <div class="col-md-3">
+                    <input id="major" class="form-control" placeholder="Major">
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary w-100" onclick="addStudent()">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- รายชื่อนักศึกษา -->
+        <div class="card shadow p-4 mt-4">
+            <h3 class="mb-3">Students List</h3>
+            <ul id="studentList" class="list-group"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
